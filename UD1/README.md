@@ -28,6 +28,19 @@ sudo apt install git
 ```
 4. Crear repositorio, añadir código y hacer commit
 ```bash
+git init
+```
+```bash
+ls -all
+```
+```bash
+git add .
+```
+```bash
+git status
+```
+```bash
+git commit -m "Crear repositorio, añadir README UD1 e imágenes"
 ```
 
 ## Plugins instalados
