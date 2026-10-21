@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='utf-8'>
+    <title>Formulario de incidencia</title>
+</head>
+<body>
+    <form action="incidencia.php" method="get">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Nombre y Apellidos" maxlength="20" size="20" />
+            <br>
+            <input type="radio" name="rol" value="Estudiante" />Estudiante<br />
+            <input type="radio" name="rol" value="Profesor" />Profesor<br />
+        </fieldset>
+        <fieldset>
+            <legend>Dónde se produce</legend>
+            <input type="radio" name="lugar" value="Todo el departamento" />Todo el departamento<br />
+            <input type="radio" name="lugar" value="Toda el aula" />Toda el aula<br />
+            <input type="radio" name="lugar" value="Sólo en un equipo" checked="checked"/>Sólo en un equipo<br />
+            <input type="text" id="identificación" name="identificación" maxlegth="15" size="15" />
+        </fieldset>
+        <fieldset>
+            <legend>Información sobre la incidencia</legend>
+            <label for="información">Descripción de la incidencia</label>
+            <textarea name="información" rows="4" cols="40" placeholder="Describe la incidencia con detalle"></textarea>
+            <label for="urgencia">Nivel de urgencia</label>
+            <br>
+            <input type="radio" name="urgencia" value="Alto" />Alto<br />
+            <input type="radio" name="urgencia" value="Medio" />Medio<br />
+            <input type="radio" name="urgencia" value="Bajo" />Bajo<br />
+            <label for="avisar">Me gustaría ser avisado por email cuando se resuelva la incidencia</label>
+            <input type="checkbox" id="avisar" name="avisar" value="on" checked="checked"/>
+        </fieldset>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+    </form>
+</body>
+</html>
