@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='utf-8'>
+    <title>Reserva de habitación</title>
+</head>
+<body>
+    <form action="validar.php" method="get">
+        <fieldset>
+            <legend>Para datos personales</legend>
+            <label for="tlf">Teléfono</label>
+            <input type="tel" id="tlf" name="telefono" pattern="[0-9]{9}" maxlength="9" size="9" placeholder="9 números"/>
+            <br>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" size="40" placeholder="El formato correcto es nombre+@+servidor de correo"/>
+        </fieldset>
+        <fieldset>
+            <legend>Para valores numéricos</legend>
+            <label for="npersonas">Número de personas</label>
+            <input type="number" id="npersonas" name="npersonas" min="0" max="100" step="1" value="0"/>
+            <br>
+            <label>Mueva la barra para indicar puntuación (Del 1 al 10)</label>
+            <input type="range" id="puntuacion" name="puntuacion" min="0" max="10" step="1" value="0"/>
+        </fieldset>
+        <fieldset>
+            <legend>Url y búsqueda</legend>
+            <label for="url">Url de tu sitio</label>
+            <input type="url" id="url" name="url"/>
+            <br>
+            <label for="search">¿Qué te interesa buscar?</label>
+            <input type="search" id="search" name="search" size="10"/>
+        </fieldset>
+        <fieldset>
+            <legend>Otros tipos</legend>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color"/>
+        </fieldset>
+        <fieldset>
+            <legend>Para fechas</legend>
+            <label for="fecha">Seleccione un día (Hasta fin de año):</label>
+            <input type="date" id="fecha" name="fecha" max="2026-12-31"/>
+            <br>
+            <label for="hora">Seleccione una hora:</label>
+            <input type="datetime-local" pattern="[0-9]{2}:[0-9]{2}" placeholder="--:--" size="2"/>
+            <label for="mes">Seleccione un mes Hasta junio del 2026:</label>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
