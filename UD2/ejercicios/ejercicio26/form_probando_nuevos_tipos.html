@@ -41,9 +41,16 @@
             <input type="date" id="fecha" name="fecha" max="2026-12-31"/>
             <br>
             <label for="hora">Seleccione una hora:</label>
-            <input type="datetime-local" pattern="[0-9]{2}:[0-9]{2}" placeholder="--:--" size="2"/>
-            <label for="mes">Seleccione un mes Hasta junio del 2026:</label>
-            
+            <input type="time" pattern="[0-9]{2}:[0-9]{2}" size="2"/>
+            <br>
+            <label for="mes">Seleccione un mes (Hasta junio del 2026):</label>
+            <input type="month" id="mes" name="mes" max="2026-06-30"/>
+            <br>
+            <label for="semana">Seleccione una semana (Hasta junio del 2026):</label>
+            <input type="week" id="semana" name="semana" max="2026-06-30"/>
+            <br>
+            <label for="fec-hor">Seleccione fecha y hora:</label>
+            <input type="datetime-local" id="fec-hor" name="fec-hor"/>            
         </fieldset>
     </form>
 </body>
