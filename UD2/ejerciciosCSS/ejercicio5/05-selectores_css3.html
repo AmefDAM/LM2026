@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>“Selectores CSS3</title>
+    <link rel='stylesheet' href='main.css'>
+    <style>
+        section#uno p[lang^="e"] {
+            color:red
+        }
+
+        section#dos p[lang*="n"] {
+            color:red
+        }
+
+        a[title~="pdf"] {
+            font-size: 20px;
+        }
+
+        a[title~="Enunciado"], a[title~="Enunciado-"] {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="uno">
+        <h2>Coloreamos de rojo los párrafos de esta sección cuyo atributo lang empiece por e</h2>
+        <p lang="es">
+            Hola Mundo
+        </p>
+        <p lang="en">
+            Hello World
+        </p>
+        <p>
+            Párrafo sin atributo lang
+        </p>
+    </section>
+    <section id="dos">
+        <h2>Coloreamos de rojo los párrafos de esta sección cuyo atributo lang acaben por n</h2>
+        <p lang="es">
+            Hola Mundo
+        </p>
+        <p lang="en">
+            Hello World
+        </p>
+        <p>
+            Párrafo sin atributo lang
+        </p>
+    </section>
+        <section id="tres">
+        <h2>Cambiamos el tamaño al link que tenga en el atributo title la palabra pdf en cualquier sitio</h2>
+        <p>
+            <a href="pdf/Enunciado de la practica1.pdf" title="Enunciado en formato pdf de la práctica 1"
+            target="_blank">Practica 1 en pdf</a>
+            <br/>
+            <a href="doc/Enunciado de la practica1.docx" title="Enunciado en otro formato de la práctica 1"
+            target="_blank">Practica 1 en otro formato</a>
+        </p>
+    </section>
+        <section>
+        <h2>Cambiamos el tamaño al link que tenga en el atributo title la palabra Enunciado o Enunciado seguida de guión medio</h2>
+        <p>
+            <a href="pdf/Enunciado de la practica1.pdf" title="Enunciado" target="_blank">Practica 1 en
+            pdf</a>
+            <br/>
+            <a href="doc/Enunciado de la practica1.docx" title="Enunciado-" target="_blank">Practica 1 en
+            formato docx</a>
+            <br/>
+            <a href="odt/Enunciado de la practica1.odt" title="Descripción del Enunciado"
+            target="_blank">Practica 1 en formato odt</a>
+        </p>
+    </section>
+</body>
+</html>
